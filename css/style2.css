@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .backSky {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #111, #0e0f19);
+    overflow: hidden;
+  }
+  
+  .sky {
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveStar 240s linear infinite;
+  }
+  
+  .sky .star {
+    fill: #fff;
+    stroke: none;
+    stroke-width: 0;
+  }
+  
+  @keyframes moveStar {
+    from {
+      transform: translate(-50%, -50%) rotate(0);
+    }
+  
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }

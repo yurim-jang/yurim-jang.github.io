@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+
+    <title>TODOLIST APP</title>
+</head>
+<body>
+    <div class="backSky">
+        <svg class="sky"></svg>
+    <div class="login">
+        <h1>Welcome!👋🏻</h1>
+        <form id="login-form">
+            <input required maxlength="15" type="text" placeholder="Your name?">
+        </form>
+    </div>
+    <div class="container">
+        <div class="top">
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <div class="greeting-box box">
+                    <h1 id="greeting-words" class="hidden"></h1>
+                    <h1 id="greeting-name" class="hidden"></h1>
+                </div>
+                <div class="clock-box box">
+                    <h2 id="date">2023.09.17 sunday</h2>
+                    <h2 id="clock">00:00</h2>
+                </div>
+                <div class="quote-box box" id="quote">
+                    <div id="user-image">
+                        <img id="img">
+                        <div id="user-text">
+                        <span class="quote-title"></span>
+                        <span></span>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="middle">
+                <div class="todo-box box">
+                    <form id="todo-form">
+                        <input type="text" placeholder="TO DO LIST ✔️">
+                    </form>
+                    <ul id="todo-list"></ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="youtube box">
+                    <h2>BOOKMARK📌</h2>
+                    <div class="book-mark__column">
+                        <div>
+                          <a href="https://www.google.com/" target="self"
+                            ><img src="icon/google.png"
+                          /></a>
+                          <div class="imo-text"></div>
+                        </div>
+                         <div>
+                            <a href="https://www.yahoo.co.jp/" target="self"
+                              ><img src="icon/yahoo.png"
+                            /></a>
+                            <div class="imo-text"></div>
+                          </div>
+                         <div>
+                          <a href="https://www.naver.com/" target="self"
+                            ><img src="icon/naver.png"
+                          /></a>
+                          <div class="imo-text"></div>
+                        </div>
+                         <div>
+                          <a href="https://www.youtube.com/" target="self"
+                            ><img src="icon/youtube.png"
+                          /></a>
+                          <div class="imo-text"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                <div class="weather box" id="weather">
+                    <h2 class="city">Seoul</h2>
+                    <div class="weather-wrap">
+                        <div class="current-col">
+                            <img src="img/500.png" />
+                            <h5>Clouds / 22</h5>
+                        </div>
+                        <div class="forescast-col">
+                            <div class="today-row">
+                                <h2>Today</h2>
+                                <div class="info">
+                                    <img src="img/800.png" /> <!--오전 9am-->
+                                    <img src="img/801.png" />
+                                    <!--오후 6pm-->
+                                    <h5 class="first-info">22</h5>
+                                    <!--오전 9am-->
+                                    <h5 class="second-info">22</h5>
+                                    <!--오후 6pm-->
+                                </div>
+                            </div>
+                            <div class="tmr-row">
+                                <h2>Tomorrow</h2>
+                                <div class="info">
+                                    <img src="img/300.png" />
+                                    <!--오전 9am-->
+                                    <img src="img/600.png" />
+                                    <!--오후 6pm-->
+                                    <h5 class="first-info">27</h5>
+                                    <!--오전 9am-->
+                                    <h5 class="second-info">27</h5>
+                                    <!--오후 6pm-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="./js/background.js"></script>
+    <script src="./js/background2.js"></script>
+    <script src="./js/greeting.js"></script>
+    <script src="./js/date.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/dDay.js"></script>
+    <script src="./js/quote.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="https://kit.fontawesome.com/efac6606bf.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
